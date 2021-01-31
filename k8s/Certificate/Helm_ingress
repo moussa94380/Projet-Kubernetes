@@ -1,0 +1,8 @@
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+kubectl create namespace ingress-word
+helm install nginx-ingress ingress-nginx/ingress-nginx \
+    --namespace ingress-word \
+    --set controller.replicaCount=2 \
+    --set controller.nodeSelector."beta\.kubernetes\.io/os"=linux \
+    --set defaultBackend.nodeSelector."beta\.kubernetes\.io/os"=linux \
+    --set controller.admissionWebhooks.patch.nodeSelector."beta\.kubernetes\.io/os"=linux

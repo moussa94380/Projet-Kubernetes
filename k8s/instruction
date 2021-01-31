@@ -1,0 +1,4 @@
+Pour mettre en place les application, il faut lancer le script.cmd
+
+Une fois les applications lancé, nous avons mis les commandes pour créer le Certificat avec openssl.
+Dans le dossier Certificate/ nous avons placé le certificat dans un secret et le secret a été ajouté dans l'ingress.

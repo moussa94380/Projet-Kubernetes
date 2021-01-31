@@ -1,0 +1,3 @@
+Emre Fidan:         Certificat auto-signé/HTTPS, ingress, Build d'images
+Moussa Magassa:     Sonde, performance, Déploiement continue
+Amina Mebarek:      Métriques, EFK
